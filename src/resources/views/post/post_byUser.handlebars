@@ -1,0 +1,18 @@
+<div class="container mt-3">
+    <div class="row g-2">
+        {{#each posts_byIdUser}}
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{title}}</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">{{detail}}</h6>
+                        <p class="card-text">{{author}}</p>
+                        <a href="/posts/{{_id}}" class="card-link">{{_id}}</a>
+                        <a href="post_by_user/del_post_by_user/{{_id}}"><button class="btn btn-primary" type="submit">Delete</button></a>
+                        <a href="post_by_user/upd_post_by_user/{{_id}}"><button class="btn btn-primary" type="submit">Edit</button></a>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>

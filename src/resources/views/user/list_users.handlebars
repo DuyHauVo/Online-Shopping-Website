@@ -1,0 +1,25 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Password</th>
+      <th scope="col">Role</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each List_user}}
+    <tr>
+      <th scope="row"></th>
+      <td>{{name}}</td>
+      <td>{{email}}</td>
+      <td>{{password}}</td>
+      <td>{{role}}</td>
+      <td><a href="list/{{_id  }}">Edit</a></td>
+      <td><a href="list/{{_id  }}">Delete</a></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

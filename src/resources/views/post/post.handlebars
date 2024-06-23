@@ -1,0 +1,17 @@
+<div class="container mt-3">
+    <div class="row g-2">
+        {{#each posts}}
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{title}}</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">{{author}}</h6>
+                        <p class="card-text">{{detail}}</p>
+                        <a href="/posts/{{_id}}" class="card-link">{{_id}}</a>
+                        <a href="posts/delete/{{_id}}"><button class="btn btn-primary" type="submit">Delete</button></a>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
